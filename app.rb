@@ -20,8 +20,7 @@ class App < Sinatra::Base
     "Goodbye, #{@user_name}."
   end
   
-    post '/multiply/:number1/:number2' do
-      get '/addnumbers/:number1/:number2'
+    get '/multiply/:number1/:number2' do
       @answer = params[:number1].to_i * params[:number2].to_i
       "#{@answer}"
     end
