@@ -22,7 +22,7 @@ class App < Sinatra::Base
   
     post '/multiply' do
       get '/addnumbers/:number1/:number2'
-      params[:number1] * params[:number2]
+      params[:number1.to_i] * params[:number2.to_i]
     end
 
 end
